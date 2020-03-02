@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>FLASK DEMO</h1>
+
+<h2>salary prediction</h2>
+
+
+
+
+<form action="{{ url_for('predict')}}"method="post">
+
+<br>
+<label for="Age">Enter the Age:</label>
+<br>
+<input type="text" id="Age" name="Age"/>
+
+<br>
+<label for="Experience">Enter your exp:</label>
+<br>
+<input type="text" id="Experience" name="Experience"/>
+
+<br>
+
+
+<button type="submit">predict</button>
+
+</form>
+
+<br>
+<br>
+
+
+{{prediction_text}}
+
+
+</body>
+</html>
